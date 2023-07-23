@@ -4,7 +4,6 @@ import Spinner from "./Spinner";
 export class News extends Component {
   constructor() {
     super();
-    console.log("Hello I am a Constructor From news component");
     this.state = {
       articles: this.articles,
       loading: true,
@@ -38,7 +37,6 @@ export class News extends Component {
     });
   };
   handleNextClick = async () => {
-    console.log("Next");
     if (
       !(
         this.state.page + 1 >
